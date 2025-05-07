@@ -4,6 +4,10 @@ import InfiniteCarousel from "./crousel1";
 import TripleCarousel from "./crousel2";
 import YouTubeEmbed from "./youtubeIframe";
 import ReviewCarousel from "./testimonialCard";
+import ProcessSteps from "./steps";
+import SkillsProgress from "./skillProgress";
+import FAQSection from "./faqSection";
+import ContactCard from "./contactCard";
 
 export default function MountBoard() {
   return (
@@ -14,6 +18,10 @@ export default function MountBoard() {
       <TripleCarousel/>
       <YouTubeEmbed/>
       <ReviewCarousel/>
+      <ProcessSteps/>
+      <SkillsProgress/>
+      <FAQSection/>
+      <ContactCard/>
     </div>
   );
 }
