@@ -22,9 +22,9 @@ export default function NavBar() {
             </div>
         </div>
         <div className="flex flex-row p-2 gap-2">
-            <div className="w-10 h-10 bg-black/20 shadow-md rounded-lg flex items-center justify-center"><FaDiscord /></div>
-            <div className="w-10 h-10 bg-black/20 shadow-md rounded-lg flex items-center justify-center"><BiLogoInstagramAlt /></div>
-            <div className="w-10 h-10 bg-black/20 shadow-md rounded-lg flex items-center justify-center"><FaLinkedinIn />
+            <div className="w-10 h-10 bg-black/10 shadow-md rounded-lg flex items-center justify-center"><FaDiscord size={20} /></div>
+            <div className="w-10 h-10 bg-black/10 shadow-md rounded-lg flex items-center justify-center"><BiLogoInstagramAlt size={20} /></div>
+            <div className="w-10 h-10 bg-black/10 shadow-md rounded-lg flex items-center justify-center"><FaLinkedinIn size={20} />
             </div>
         </div>
     </div>
