@@ -1,0 +1,43 @@
+import React from "react";
+
+const images = [
+  "data:image/jpeg;base64,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",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC6icPCuruVR3JH-6tirUf5lNdYd0hcsRLs3RhToAEPjsS31Q4S4Z8lAqFuKiwUUuV4EU&usqp=CAU",
+  "https://c4.wallpaperflare.com/wallpaper/814/955/589/animals-dog-corgi-canine-wallpaper-preview.jpg",
+  "https://c4.wallpaperflare.com/wallpaper/426/143/631/clouds-dodge-dog-inspirational-wallpaper-preview.jpg",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYk2qb3TML53rPwH5IRxQ_BHwM4eXaMY3yg0iCmQHsqe6H8_BNh2vNL2pjb-A4oymu-Jo&usqp=CAU",
+];
+
+export default function InfiniteCarousel() {
+  return (
+    <div className="overflow-hidden mt-10 whitespace-nowrap relative w-full py-2">
+      <div className="animate-scroll flex space-x-2 w-max">
+        {[...images, ...images].map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`carousel-${index}`}
+            className="w-[300px] h-[150px] object-cover rounded shadow-md"
+          />
+        ))}
+      </div>
+
+      {/* Animation Style */}
+      <style>{`
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+
+        .animate-scroll {
+          animation: scroll 30s linear infinite;
+        }
+      `}</style>
+      <div className="flex items-center justify-center">
+        <span className="text-4xl p-30 font-medium">
+            Bring ideas to life
+        </span>
+      </div>
+    </div>
+  );
+}
