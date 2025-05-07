@@ -7,7 +7,7 @@ import ReviewCarousel from "./testimonialCard";
 
 export default function MountBoard() {
   return (
-    <div className="min-h-screen flex flex-col moving-gradient-bg items-center justify-start px-4 sm:px-6 md:px-8">
+    <div className="min-h-screen flex flex-col moving-gradient-bg items-center justify-start px- sm:px-6 md:px-8">
       <NavBar />
       <Home />
       <InfiniteCarousel/>

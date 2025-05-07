@@ -2,9 +2,10 @@ import PulsatingDot from "./PulsatingDot";
 
 export default function NavBar() {
   return (
-    <div className="flex w-fit flex-col justify-center items-center">
-        <div className=" border-b-[2px] border-black/10 gap-2 pt-10 flex flex-col justify-center items-center">
-            <div className="w-[100px] h-[100px] shadow-xl bg-black rounded-full"> <img src="logos/creator-hub-logo.png" alt="" /></div>
+    <div className="flex w-full relative flex-col z-10 justify-center items-center">
+        <div className="w-full h-25 absolute top-0 bg-black -z-1"></div>
+        <div className=" border-b-[3px] w-full border-black/10 gap-2 pt-10 flex flex-col justify-center items-center">
+            <div className="w-[100px] h-[100px] shadow-[0_0_8px_rgba(255,255,255,0.3)] bg-black rounded-full"> <img src="logos/creator-hub-logo.png" alt="" /></div>
             <div className="flex flex-col justify-center items-center">
                 <span className="text-2xl font-medium ml-3">Creators Hub</span>
                 <span className="ml-2 text-black/40">Graphic designer, Video editor</span>
