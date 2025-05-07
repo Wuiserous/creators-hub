@@ -4,7 +4,7 @@ export default function NavBar() {
   return (
     <div className="flex w-fit flex-col justify-center items-center">
         <div className=" border-b-[2px] border-black/10 gap-2 pt-10 flex flex-col justify-center items-center">
-            <div className="w-[100px] h-[100px] shadow-xl bg-black rounded-full"> <img src="\public\logos\ChatGPT Image May 7, 2025, 07_11_09 AM.png" alt="" /></div>
+            <div className="w-[100px] h-[100px] shadow-xl bg-black rounded-full"> <img src="http://localhost:5173/public/logos/ChatGPT%20Image%20May%207,%202025,%2007_11_09%20AM.png" alt="" /></div>
             <div className="flex flex-col justify-center items-center">
                 <span className="text-2xl font-medium ml-3">Creators Hub</span>
                 <span className="ml-2 text-black/40">Graphic designer, Video editor</span>
