@@ -20,7 +20,7 @@ const steps = [
 
 const ProcessSteps = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 ">
+    <div className="min-h-screen mt-20 flex flex-col items-center justify-center px-4 ">
       <div className="mb-20 px-4 text-center">
         <h2 className="text-3xl font-bold text-gray-800 mt-2">Getting your projects done has never been easier</h2>
         <p className="text-gray-600 mt-1">The Easy Way to Get Projects Done!</p>
@@ -31,7 +31,7 @@ const ProcessSteps = () => {
         <div className="absolute left-4 top-0 bottom-0 w-1 bg-gray-300 rounded-full"></div>
 
         {/* Steps */}
-        <div className="flex flex-col gap-6 ml-8">
+        <div className="flex flex-col gap-6 ml-8.25">
           {steps.map((step, i) => (
             <div key={i} className="relative flex items-start gap-4">
               {/* Dot */}

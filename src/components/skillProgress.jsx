@@ -76,7 +76,7 @@ const SkillBar = ({ skill }) => {
 
 const SkillsProgress = () => {
   return (
-    <div className="min-h-fit mb-10 w-full px-4 py-1 text-center">
+    <div className="min-h-fit mt-20 mb-20 w-full px-4 py-1 text-center">
   <h2 className="text-3xl font-bold text-gray-800 mb-1">Skills and Expertise</h2>
   <p className="text-black/60 text-lg mb-6">The tools behind my creativity!</p>
 
