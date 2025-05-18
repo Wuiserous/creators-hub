@@ -15,7 +15,7 @@ export default function MountBoard() {
     <div className="min-h-screen flex flex-col moving-gradient-bg items-center justify-start px- sm:px-6 md:px-8">
       <NavBar />
       <Home />
-      <NewDesign />
+      
       <InfiniteCarousel/>
       <TripleCarousel/>
       <YouTubeEmbed/>
