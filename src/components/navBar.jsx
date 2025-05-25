@@ -26,20 +26,20 @@ export default function NavBar() {
         </div>
         
         {/* Text Info: Name, Subtitle, Availability */}
-        <div className="flex flex-col justify-center relative lg:mb-[-30px] lg:flex-row items-center
+        <div className="flex flex-col justify-center relative lg:mb-[-30px]  items-center
                        lg:items-start">
           <div className="flex flex-col justify-center lg:text-left text-center">   
             <span className="text-2xl font-medium ml-3
                          lg:ml-0 lg:text-white lg:text-6xl">Creators Hub</span>
-          <span className="ml-2 text-black/40
-                         lg:ml-0 lg:text-white/60 lg:text-sm lg:ml-2">Graphic designer, Video editor</span>
           </div>
           
           {/* Availability */}
-          <div className="h-10 flex items-center lg:absolute lg:bottom-[-1px] lg:right-22 lg:opacity-80 justify-center w-full
-                         lg:w-auto lg:h-auto lg:mt-1 lg:justify-start">
+          <div className="h-10 flex  flex-col lg:flex-row items-center  lg:right-22 lg:opacity-80 justify-center w-fit
+                         lg:w-auto lg:h-auto lg:justify-start">
+                                      <span className="ml-2 text-black/40
+                         lg:ml-0 lg:text-white/60 lg:text-sm lg:ml-2 lg:mr-1">Graphic designer, Video editor</span>
             <div className="flex flex-row gap-1 items-center justify-center
-                           lg:text-sm lg:text-green-400"> {/* Changed text color for better visibility on black */}
+                           lg:text-sm lg:text-green-400 mt-[1px]"> {/* Changed text color for better visibility on black */}
               <span><PulsatingDot color="green" /></span> {/* Assuming PulsatingDot can take a color prop or adapts */}
               <span className="lg:mb-[0.5px]">Available</span>
             </div>
@@ -48,8 +48,8 @@ export default function NavBar() {
       </div>
 
       {/* Social Icons Section */}
-      <div className="flex lg:mb-2 flex-row p-2 gap-2 
-                     lg:p-0 lg:gap-3 lg:w-auto lg:justify-start">
+      <div className="flex lg:mb-2 flex-row p-2 gap-2
+                     lg:p-0 lg:gap-3 lg:mr-5">
         <a href="#" aria-label="Discord" className="w-10 h-10 bg-black/10 shadow-md rounded-lg flex items-center justify-center
                                  lg:bg-white/50 lg:hover:bg-white/20 lg:text-black">
           <FaDiscord size={20} />
