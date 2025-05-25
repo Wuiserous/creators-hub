@@ -48,8 +48,8 @@ export default function NavBar() {
       </div>
 
       {/* Social Icons Section */}
-      <div className="flex lg:mb-2 flex-row p-2 gap-2
-                     lg:p-0 lg:gap-3 lg:mr-5">
+      <div className="flex lg:mb-2 flex-row p-2 gap-2 
+                     lg:p-0 lg:gap-3 lg:w-auto lg:justify-start">
         <a href="#" aria-label="Discord" className="w-10 h-10 bg-black/10 shadow-md rounded-lg flex items-center justify-center
                                  lg:bg-white/50 lg:hover:bg-white/20 lg:text-black">
           <FaDiscord size={20} />
