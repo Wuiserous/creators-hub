@@ -18,36 +18,49 @@ const verticalImages = [
 
 export default function TripleCarousel() {
   return (
-    <div className="whitespace-nowrap relative w-full overflow-hidden space-y-4">
+    <div className="whitespace-nowrap relative w-full overflow-hidden space-y-1">
       {/* Row 1 - Scroll Left */}
       <div className="overflow-hidden whitespace-nowrap">
-        <div className="flex animate-scroll-left space-x-2 w-max">
+        <div className="scroll-container scroll-left">
           {[...horizontalImages, ...horizontalImages].map((src, idx) => (
-            <img key={`h1-${idx}`} src={src} alt="" className="w-[200px] h-[100px] rounded shadow" />
+            <img key={`h1-${idx}`} src={src} alt="" className="w-[200px] lg:w-[400px] h-[100px] ml-1 lg:h-[200px] rounded shadow" />
           ))}
         </div>
       </div>
 
       {/* Row 2 - Scroll Right */}
       <div className="overflow-hidden whitespace-nowrap">
-        <div className="flex animate-scroll-right space-x-2 w-max">
+        <div className="scroll-container scroll-right">
           {[...horizontalImages, ...horizontalImages].map((src, idx) => (
-            <img key={`h2-${idx}`} src={src} alt="" className="w-[200px] h-[100px] rounded shadow" />
+            <img key={`h2-${idx}`} src={src} alt="" className="w-[200px] lg:w-[400px] h-[100px] ml-1 lg:h-[200px] rounded shadow" />
           ))}
         </div>
       </div>
 
-      {/* Row 3 - Vertical Scroll Up */}
-      <div className="h-[100px] overflow-hidden">
-        <div className="flex animate-scroll-left space-x-2 w-max">
+      {/* Row 3 - Scroll Left (vertical images) */}
+      <div className="h-[100px] lg:h-[350px] overflow-hidden whitespace-nowrap">
+        <div className="scroll-container scroll-left">
           {[...verticalImages, ...verticalImages].map((src, idx) => (
-            <img key={`v-${idx}`} src={src} alt="" className="w-[80px] h-[100px] rounded shadow" />
+            <img key={`v-${idx}`} src={src} alt="" className="w-[80px] lg:w-[250px] h-[100px] ml-1 lg:h-[350px] rounded shadow" />
           ))}
         </div>
       </div>
 
       {/* Animation Styles */}
       <style>{`
+        .scroll-container {
+          display: flex;
+          width: max-content;
+        }
+
+        .scroll-left {
+          animation: scroll-left 40s linear infinite;
+        }
+
+        .scroll-right {
+          animation: scroll-right 40s linear infinite;
+        }
+
         @keyframes scroll-left {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
@@ -57,30 +70,15 @@ export default function TripleCarousel() {
           0% { transform: translateX(-50%); }
           100% { transform: translateX(0); }
         }
-
-        @keyframes scroll-up {
-          0% { transform: translateY(0); }
-          100% { transform: translateY(-50%); }
-        }
-
-        .animate-scroll-left {
-          animation: scroll-left 30s linear infinite;
-        }
-
-        .animate-scroll-right {
-          animation: scroll-right 30s linear infinite;
-        }
-
-        .animate-scroll-up {
-          animation: scroll-up 30s linear infinite;
-        }
       `}</style>
+
+      {/* Center Text */}
       <div className="flex flex-col p-30 items-center justify-center">
-        <span className="text-3xl  font-medium">
-           Raw footage to
+        <span className="text-3xl lg:text-6xl font-medium">
+          Raw footage to
         </span>
-        <span className="text-3xl font-medium">
-            Cinematic masterpiece!
+        <span className="text-3xl lg:text-6xl font-medium">
+          Cinematic masterpiece!
         </span>
       </div>
     </div>

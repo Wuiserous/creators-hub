@@ -17,7 +17,7 @@ export default function InfiniteCarousel() {
             key={index}
             src={src}
             alt={`carousel-${index}`}
-            className="w-[300px] h-[150px] object-cover rounded shadow-md"
+            className="w-[300px] lg:w-[400px] lg:h-[250px] h-[150px] object-cover rounded shadow-md"
           />
         ))}
       </div>
@@ -34,7 +34,7 @@ export default function InfiniteCarousel() {
         }
       `}</style>
       <div className="flex items-center justify-center">
-        <span className="text-4xl p-30 font-medium">
+        <span className="text-4xl lg:text-6xl p-30 font-medium">
             Bring ideas to life
         </span>
       </div>
