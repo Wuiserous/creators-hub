@@ -34,7 +34,7 @@ const FAQItem = ({ faq, isOpen, onClick }) => {
   const [ref, { height }] = useMeasure();
 
   return (
-    <div className="bg-white p-2 rounded-full shadow-md overflow-hidden mb-2 transition-all duration-300">
+    <div className={`bg-white p-2 ${isOpen? 'rounded-4xl': 'rounded-2xl'} shadow-md overflow-hidden mb-2 transition-all duration-300`}>
       <button
         className="w-full flex items-center justify-between px-4 py-3 text-left"
         onClick={onClick}
