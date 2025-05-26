@@ -35,12 +35,12 @@ const reviews = [
 export default function ReviewCarousel() {
   const [index, setIndex] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % reviews.length);
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setIndex((prev) => (prev + 1) % reviews.length);
+  //   }, 2000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const handlePrev = () => {
     setIndex((prev) => (prev - 1 + reviews.length) % reviews.length);
@@ -53,12 +53,12 @@ export default function ReviewCarousel() {
   const review = reviews[index];
 
   return (
-    <div className="p-5">
+    <div className="">
         <div className="flex flex-col py-30 items-center justify-center">
-        <span className="text-3xl  font-medium">
+        <span className="text-3xl lg:text-6xl  font-medium">
            What our clients says
         </span>
-        <span className="text-center text-black/50">
+        <span className="text-center lg:text-md text-black/50 lg:mb-10 lg:mt-2">
             Feedback from clients who turned their ideas into success with our expertise
         </span>
         <div className="w-50 flex relative flex-row mt-5 h-20">
@@ -74,7 +74,7 @@ export default function ReviewCarousel() {
             <span className="text-md font-medium absolute ml-5 bottom-[-25px]">Trusted by Visionaries</span>
         </div>
       </div>
-        <div className="max-w-sm mx-auto mt-10 bg-white rounded-3xl shadow-lg p-1 text-center relative">
+        <div className="max-w-sm mx-auto mt-10 lg:mt-[-50px] bg-white rounded-3xl shadow-lg p-1 text-center relative">
       {/* Avatar & Name */}
      <div className="p-10 bg-black/10 rounded-[20px] min-h-[420px]">
      <div className="flex items-center gap-4 mb-4">

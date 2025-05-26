@@ -22,7 +22,7 @@ const ProcessSteps = () => {
   return (
     <div className="min-h-screen mt-20 flex flex-col items-center justify-center px-4 ">
       <div className="mb-20 px-4 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mt-2">Getting your projects done has never been easier</h2>
+        <h2 className="text-3xl font-bold lg:w-[700px] lg:text-6xl lg:text-4xl text-black mt-2">Getting your projects done has never been easier</h2>
         <p className="text-gray-600 mt-1">The Easy Way to Get Projects Done!</p>
       </div>
 
