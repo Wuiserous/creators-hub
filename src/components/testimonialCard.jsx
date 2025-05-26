@@ -53,7 +53,7 @@ export default function ReviewCarousel() {
   const review = reviews[index];
 
   return (
-    <div className="">
+    <div className="px-5">
         <div className="flex flex-col py-30 items-center justify-center">
         <span className="text-3xl lg:text-6xl  font-medium">
            What our clients says
