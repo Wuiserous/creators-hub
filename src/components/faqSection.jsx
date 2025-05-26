@@ -5,36 +5,32 @@ import { useMeasure } from "@react-hookz/web"; // auto height support
 
 const faqs = [
   {
-    question: "What do you need from me to get started?",
-    answer: "I’ll need your brief, brand assets, goals, and any reference material."
+    question: "What services does Creators Hub offer?",
+    answer: "We specialize in full-suite social media management including content creation, post scheduling, community engagement, analytics reporting, and paid ad campaign management."
   },
   {
-    question: "What if I need more revisions?",
-    answer: "You can request more revisions depending on the plan. Additional ones may cost extra."
+    question: "Which platforms do you manage?",
+    answer: "We handle major social media platforms including Instagram, Facebook, Twitter (X), LinkedIn, and YouTube. We also work with emerging platforms as per client needs."
   },
   {
-    question: "How long will it take to complete my video project?",
-    answer: "Depending on the complexity, usually between 3–7 days."
+    question: "Can you help grow our followers and engagement organically?",
+    answer: "Absolutely! We use proven strategies like content optimization, trend analysis, and targeted engagement to build a loyal and active audience over time—without relying solely on ads."
   },
   {
-    question: "Do you provide subtitles or captions for videos?",
-    answer: "Yes! Captions can be included upon request."
+    question: "How do you create content for our brand?",
+    answer: "Our creative team collaborates closely with you to understand your brand voice and goals. We handle everything from designing graphics to writing captions, ensuring the content aligns perfectly with your identity."
   },
   {
-    question: "Do you offer a bulk discount for multiple thumbnails?",
-    answer: "Absolutely. Let's discuss your quantity and I’ll offer a package deal."
+    question: "What’s the process to get started with Creators Hub?",
+    answer: "Simply click the “Get in Touch” button or reach out via our contact form. We’ll schedule a discovery call to understand your needs and craft a custom plan tailored to your brand."
   },
-  {
-    question: "What if I don't like the thumbnail?",
-    answer: "You'll get revisions until you're satisfied as per the agreed number of changes."
-  }
 ];
 
 const FAQItem = ({ faq, isOpen, onClick }) => {
   const [ref, { height }] = useMeasure();
 
   return (
-    <div className={`bg-white p-2 ${isOpen? 'rounded-4xl': 'rounded-2xl'} shadow-md overflow-hidden mb-2 transition-all duration-300`}>
+    <div className={`bg-white p-2 ${isOpen? 'rounded-2xl': 'rounded-2xl'} hover:scale-[1.05] shadow-md overflow-hidden mb-2 transition-all lg:w-[600px] duration-300`}>
       <button
         className="w-full flex items-center justify-between px-4 py-3 text-left"
         onClick={onClick}
