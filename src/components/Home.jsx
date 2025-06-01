@@ -1,13 +1,13 @@
 export default function Home() {
     return (
         <div className="flex w-fit mx-auto mt-10 flex-col items-center justify-center">
-            <span className="text-4xl block lg:text-8xl font-medium">
+            <span className="text-4xl lg:text-8xl font-medium">
                 Your Vision
             </span>
-            <span className="text-4xl block lg:text-8xl font-medium">
+            <span className="text-4xl lg:text-8xl font-medium">
                 Our Creativity
             </span>
-            <span className="text-black/40 block">
+            <span className="text-black/40">
                 Let's create something amazing
             </span>
             <div className="relative lg:mx-auto lg:mb-10 mt-10 lg:mt-5  text-center w-full h-20">

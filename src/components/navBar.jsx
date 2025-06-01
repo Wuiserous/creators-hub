@@ -40,7 +40,7 @@ const NavBar = forwardRef((props, ref) => {
   }}
   onMouseLeave={(e) => {
     e.currentTarget.scrollTo({ top: 0, behavior: 'smooth' });
-  }} className="flex overflow-auto py-1 h-7 flex-col">
+  }} className="flex lg:overflow-auto lg:py-1 lg:h-7 flex-col">
             <div className="h-10 flex flex-col lg:flex-row items-center  lg:right-22 lg:opacity-80 justify-center w-fit
                          lg:w-auto lg:h-auto lg:justify-start">
                                       <span className="ml-2 text-black/40
@@ -51,7 +51,7 @@ const NavBar = forwardRef((props, ref) => {
                 <span className="lg:mb-[0.5px]">Available</span>
               </div>
             </div>
-            <button className="text-white/60 pl-2 w-fit">click to see my bio</button>
+            <button className="text-white/60 pl-2 w-fit hidden lg:block">click to see my bio</button>
           </div>
         </div>
       </div>
