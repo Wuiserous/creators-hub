@@ -1,5 +1,12 @@
 @import "tailwindcss";
+::-webkit-scrollbar {
+  display: none;
+}
 
+html {
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
 
 .pulsatingDot {
     animation: pulseDot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
@@ -38,7 +45,45 @@
     background-size: 600% 600%;
     animation: gradientMove 10s ease infinite;
   }
+
+.hover-up-tilt-left,
+.hover-up-tilt-right,
+.hover-up {
+  transition: transform 0.2s ease;
+}
+
+.hover-up:hover {
+  transition: transform 0.2s ease;
+}
+
+.hover-up-tilt-left:hover {
+  transform: translateY(-6px) rotateZ(-8deg);
+}
+
+.hover-up-tilt-right:hover {
+  transform: translateY(-6px) rotateZ(8deg);
+}
+.hover-up:hover {
+  transform: translateY(-6px);
+}
   
 
-  
-  
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    scale: 0.98;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    scale: 1;
+  }
+}
+
+
+.block {
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 40% ;
+}

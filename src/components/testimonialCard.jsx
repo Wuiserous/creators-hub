@@ -63,13 +63,13 @@ export default function ReviewCarousel() {
         </span>
         <div className="w-50 flex relative flex-row mt-5 h-20">
             <div className="h-20 w-20 absolute left-0 rounded-full">
-                <img src={reviews[0].avatar} alt="Avatar" className="h-20 w-20 border rounded-full" />
+                <img src={reviews[0].avatar} alt="Avatar" className="h-20 w-20 shadow-md shadow-black rounded-full" />
             </div>
             <div className="h-20 w-20 absolute left-15 rounded-full">
-                <img src={reviews[1].avatar} alt="Avatar" className="h-20 w-20 border rounded-full" />
+                <img src={reviews[1].avatar} alt="Avatar" className="h-20 w-20 shadow-md shadow-black rounded-full" />
             </div>
             <div className="h-20 w-20 absolute left-30 rounded-full">
-                <img src={reviews[2].avatar} alt="Avatar" className="h-20 w-20 border rounded-full" />
+                <img src={reviews[2].avatar} alt="Avatar" className="h-20 w-20 shadow-md shadow-black rounded-full" />
             </div>
             <span className="text-md font-medium absolute ml-5 bottom-[-25px]">Trusted by Visionaries</span>
         </div>
@@ -81,7 +81,7 @@ export default function ReviewCarousel() {
         <img
           src={review.avatar}
           alt={review.name}
-          className="w-14 h-14 rounded-full object-cover"
+          className="w-14 h-14 shadow-md shadow-black rounded-full object-cover"
         />
         <div className="text-left">
           <p className="font-semibold">{review.name}</p>

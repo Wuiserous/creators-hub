@@ -33,7 +33,7 @@ const ProcessSteps = () => {
         {/* Steps */}
         <div className="flex flex-col gap-6 ml-8.25">
           {steps.map((step, i) => (
-            <div key={i} className="relative flex items-start gap-4">
+            <div key={i} className="relative block flex items-start gap-4">
               {/* Dot */}
               <div className="w-4 h-4 bg-black rounded-full absolute -left-6 top-2"></div>
 

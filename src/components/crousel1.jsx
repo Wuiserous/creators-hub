@@ -10,14 +10,14 @@ const images = [
 
 export default function InfiniteCarousel() {
   return (
-    <div className="overflow-hidden mt-10 whitespace-nowrap relative w-full py-2">
-      <div className="animate-scroll flex space-x-2 w-max">
+    <div className="overflow-hidden block mt-10 whitespace-nowrap relative w-full py-2">
+      <div className="animate-scroll p-2 flex space-x-2 w-max">
         {[...images, ...images].map((src, index) => (
           <img
             key={index}
             src={src}
             alt={`carousel-${index}`}
-            className="w-[300px] lg:w-[400px] lg:h-[250px] h-[150px] object-cover rounded shadow-md"
+            className="w-[300px] p-1 rounded-[10px] bg-gray-400 shadow-md shadow-black transition-transform duration-400 ease-in-out hover:scale-[1.07] lg:w-[400px] lg:h-[250px] h-[150px] object-cover rounded shadow-md"
           />
         ))}
       </div>
@@ -34,7 +34,7 @@ export default function InfiniteCarousel() {
         }
       `}</style>
       <div className="flex items-center justify-center">
-        <span className="text-4xl lg:text-6xl p-30 font-medium">
+        <span className="text-4xl block lg:text-6xl p-30 font-medium">
             Bring ideas to life
         </span>
       </div>
