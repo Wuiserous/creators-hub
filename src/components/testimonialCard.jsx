@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 
 const reviews = [
   {
@@ -32,7 +32,7 @@ const reviews = [
   // Add more reviews as needed
 ];
 
-export default function ReviewCarousel() {
+const ReviewCarousel = forwardRef((props, ref) =>{
   const [index, setIndex] = useState(0);
 
   // useEffect(() => {
@@ -53,7 +53,7 @@ export default function ReviewCarousel() {
   const review = reviews[index];
 
   return (
-    <div className="px-5">
+    <div ref={ref} className="px-5">
         <div className="flex flex-col py-30 items-center justify-center">
         <span className="text-3xl lg:text-6xl  font-medium">
            What our clients says
@@ -74,7 +74,7 @@ export default function ReviewCarousel() {
             <span className="text-md font-medium absolute ml-5 bottom-[-25px]">Trusted by Visionaries</span>
         </div>
       </div>
-        <div className="max-w-sm mx-auto mt-10 lg:mt-[-50px] bg-white rounded-3xl shadow-lg p-1 text-center relative">
+        <div className="max-w-sm block mx-auto mt-10 lg:mt-[-50px] bg-white rounded-3xl shadow-lg p-1 text-center relative">
       {/* Avatar & Name */}
      <div className="p-10 bg-black/10 rounded-[20px] min-h-[420px]">
      <div className="flex items-center gap-4 mb-4">
@@ -117,4 +117,6 @@ export default function ReviewCarousel() {
     </div>
     </div>
   );
-}
+})
+
+export default ReviewCarousel

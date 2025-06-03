@@ -1,6 +1,7 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+
 
 const skills = [
     {
@@ -74,9 +75,9 @@ const SkillBar = ({ skill }) => {
   
   
 
-const SkillsProgress = () => {
+const SkillsProgress = (forwardRef((props, ref) => {
   return (
-    <div className="min-h-fit mt-20 mb-20 w-full lg:w-[700px] px-4 py-1 text-center">
+    <div ref={ref} className="min-h-fit mt-20 mb-20 block w-full lg:w-[700px] mx-auto px-4 py-1 text-center">
   <h2 className="text-3xl font-bold text-gray-800 mb-1">Skills and Expertise</h2>
   <p className="text-black/60 text-lg mb-6">The tools behind my creativity!</p>
 
@@ -89,6 +90,6 @@ const SkillsProgress = () => {
 
 
   );
-};
+}));
 
 export default SkillsProgress;

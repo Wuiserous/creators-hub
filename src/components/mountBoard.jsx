@@ -15,12 +15,6 @@ export default function MountBoard() {
   return (
     <div className="min-h-screen relative scroll-smooth flex flex-col moving-gradient-bg items-center justify-start ">
       <App />
-      <YouTubeEmbed/>
-      <ReviewCarousel/>
-      <ProcessSteps/>
-      <SkillsProgress/>
-      <FAQSection/>
-      <ContactCard/>
     </div>
   );
 }

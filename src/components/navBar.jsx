@@ -21,7 +21,7 @@ const NavBar = forwardRef((props, ref) => {
                       lg:border-none lg:w-auto lg:pt-0 lg:pb-0 lg:flex-row lg:items-center lg:gap-4">
         
         {/* Logo */}
-        <div className="w-[100px] h-[100px] shadow-[0_0_8px_rgba(255,255,255,0.3)] bg-black rounded-full
+        <div className="w-[100px] fancy-btn h-[100px] shadow-[0_0_8px_rgba(255,255,255,0.3)] bg-black rounded-full
                        lg:w-60 lg:h-60 lg:mb-[-120px] lg:ml-[50px] lg:shadow-none"> 
           <img src="logos/creator-hub-logo.png" alt="Creators Hub Logo" className="w-full h-full object-cover rounded-full" />
         </div>

@@ -11,13 +11,26 @@ import SkillsProgress from "./skillProgress";
 import FAQSection from "./faqSection";
 import ContactCard from "./contactCard";
 import ShortsCarousel from './crousel2';
+import { FaHome } from "react-icons/fa";
+import { MdOutlineOndemandVideo } from "react-icons/md";
+import { MdOutlineReviews } from "react-icons/md";
+import { LuFileQuestion } from "react-icons/lu";
+import { PiCompassToolLight } from "react-icons/pi";
+
+
+
+
+
 
 
 function App() {
   const navRef = useRef();
-  const aboutRef = useRef();
   const portfolioRef = useRef();
+  const aboutRef = useRef();
+  const skillRef = useRef();
   const contactRef = useRef();
+  const testimonialRef = useRef();
+  const faqRef = useRef();
 
   const scrollToSection = (ref) => {
   if (!ref.current) return;
@@ -25,7 +38,7 @@ function App() {
   const targetY = ref.current.getBoundingClientRect().top + window.pageYOffset;
   const startY = window.scrollY;
   const distance = targetY - startY;
-  const duration = 2000; // ms
+  const duration = 1000; // ms
   const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
 
   let startTime = null;
@@ -47,11 +60,14 @@ function App() {
 
 
   return (
-    <div className='w-full scroll-smooth'>
+    <div className='w-full scroll-smooth touch-pan-y border overscroll-contain'>
       {/* App Bar */}
-      <nav className="fixed z-10 flex gap-2 border bg-red-500 top-[650px] text-white">
-        <button onClick={() => scrollToSection(navRef)}>home</button>
-        <button onClick={() => scrollToSection(aboutRef)}>about</button>
+      <nav className="fixed scale-[1.2] border-[2px] px-10 mb-1 glass bottom-4 left-1/2 -translate-x-1/2 z-10 rounded-full p-2 flex gap-4 text-white">
+        <button className='border p-1 rounded-full' onClick={() => scrollToSection(navRef)}><FaHome /></button>
+        <button className='border p-1 rounded-full' onClick={() => scrollToSection(aboutRef)}><MdOutlineOndemandVideo /></button>
+        <button className='border p-1 rounded-full' onClick={() => scrollToSection(testimonialRef)}><MdOutlineReviews /></button>
+        <button className='border p-1 rounded-full' onClick={() => scrollToSection(faqRef)}><LuFileQuestion /></button>
+        <button className='border p-1 rounded-full' onClick={() => scrollToSection(skillRef)}><PiCompassToolLight /></button>
       </nav>
 
       {/* Sections */}
@@ -59,6 +75,12 @@ function App() {
       <Home />
       <InfiniteCarousel/>
       <ShortsCarousel ref={aboutRef} />
+      <YouTubeEmbed/>
+      <ReviewCarousel ref={testimonialRef}/>
+      <ProcessSteps/>
+      <SkillsProgress ref={skillRef}/>
+      <FAQSection ref={faqRef}/>
+      <ContactCard/>
     </div>
   );
 }

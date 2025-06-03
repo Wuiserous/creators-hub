@@ -21,7 +21,7 @@ export default function Home() {
                     </span>
                 </div>
             </div>
-            <button className="border-none mt-4 px-10 lg:px-20 py-4 rounded-full text-xl text-white/90 bg-black/90 flex shadow-black/50 shadow-lg items-center justify-center">
+            <button className="border-none fancy-btn mt-4 px-10 lg:px-20 py-4 rounded-full text-xl text-white/90 bg-black/90 flex shadow-black/50 shadow-lg items-center justify-center">
             Get in touch
             </button>
         </div>
