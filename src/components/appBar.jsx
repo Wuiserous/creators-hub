@@ -60,14 +60,14 @@ function App() {
 
 
   return (
-    <div className='w-full scroll-smooth touch-pan-y border overscroll-contain'>
+    <div className='w-full scroll-smooth touch-pan-y border border-black overscroll-contain'>
       {/* App Bar */}
-      <nav className="fixed scale-[1.2] border-[2px] px-10 mb-1 glass bottom-4 left-1/2 -translate-x-1/2 z-10 rounded-full p-2 flex gap-4 text-white">
-        <button className='border p-1 rounded-full' onClick={() => scrollToSection(navRef)}><FaHome /></button>
-        <button className='border p-1 rounded-full' onClick={() => scrollToSection(aboutRef)}><MdOutlineOndemandVideo /></button>
-        <button className='border p-1 rounded-full' onClick={() => scrollToSection(testimonialRef)}><MdOutlineReviews /></button>
-        <button className='border p-1 rounded-full' onClick={() => scrollToSection(faqRef)}><LuFileQuestion /></button>
-        <button className='border p-1 rounded-full' onClick={() => scrollToSection(skillRef)}><PiCompassToolLight /></button>
+      <nav className="fixed scale-[1.2] border-[2px]  px-10 mb-1 glass bottom-4 left-1/2 -translate-x-1/2 z-10 rounded-full p-2 flex gap-4 text-white">
+        <button className='text-black p-1' onClick={() => scrollToSection(navRef)}><FaHome size={18} /></button>
+        <button className='text-black p-1' onClick={() => scrollToSection(aboutRef)}><MdOutlineOndemandVideo size={20}/></button>
+        <button className='text-black p-1' onClick={() => scrollToSection(testimonialRef)}><MdOutlineReviews size={20}/></button>
+        <button className='text-black p-1' onClick={() => scrollToSection(faqRef)}><LuFileQuestion size={20}/></button>
+        <button className='text-black font-bold-md text-2xl' onClick={() => scrollToSection(skillRef)}><PiCompassToolLight /></button>
       </nav>
 
       {/* Sections */}
