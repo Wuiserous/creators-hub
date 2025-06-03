@@ -73,12 +73,14 @@ const FAQSection = () => {
           />
         ))}
       </div>
-      <span className="text-lg text black font-medium">Can't find your answer?</span>
+
+      <span className="text-lg text-black font-medium">Can't find your answer?</span>
       <button className="border-none mt-4 px-10 py-4 mx-auto rounded-full text-xl text-white/90 bg-black/90 flex shadow-black/50 shadow-lg items-center justify-center">
-            Get in touch
+        Get in touch
       </button>
     </div>
   );
 };
+
 
 export default FAQSection;

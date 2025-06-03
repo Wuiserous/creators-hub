@@ -2,7 +2,7 @@ import React from "react";
 
 export default function YouTubeEmbed() {
   return (
-    <div className="w-full p-4 max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden ">
+    <div className="w-full block p-4 max-w-3xl mx-auto aspect-video rounded-lg overflow-hidden ">
       <iframe
         width="100%"
         height="100%"
